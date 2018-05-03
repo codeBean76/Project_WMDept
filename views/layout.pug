@@ -7,9 +7,10 @@ html
     link(rel='stylesheet', href='https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css')
     script(defer, src='https://code.getmdl.io/1.3.0/material.min.js')
   body
-    block top-nav
-      include includes/top-nav.pug
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      block top-nav
+        include includes/top-nav.pug
     
-    main.mdl-layout__content
-      .page-content
-        block content
+      .mdl-layout__content
+        .page-content
+          block content
